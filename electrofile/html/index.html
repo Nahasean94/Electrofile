@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Electrofile</title>
+    <link rel="stylesheet" href="./../css/bootstrap.min.css">
+    <link rel="stylesheet" href="./../css/font-awesome.min.css">
+    <link rel="stylesheet" href="./../css/styles.css">
+    <script src="./../renderer/renderer.js"></script>
+    <script>
+        (function () {
+            readFolder('/');
+        })();
+    </script>
+</head>
+<body>
+<div class="container-fluid">
+    <div id="backBtn"></div>
+    <div class="row">
+        <hr>
+        <div class="col-sm-3">
+            <div class="shortcut" onclick="readFolder('/');"><i class="fa fa-anchor" aria-hidden="true"></i> Root</div>
+            <hr>
+            <div class="shortcut" onclick="readFolder('/home/')"><i class="fa fa-home" aria-hidden="true"></i> Home
+            </div>
+            <hr>
+            <br>
+            SHORTCUTS
+            <br>
+            <hr>
+            <div class="shortcut" onclick="readFolder('/home/sean/Desktop/')"><i class="fa fa-desktop"
+                                                                                 aria-hidden="true"></i> Desktop
+            </div>
+            <hr>
+            <div class="shortcut" onclick="readFolder('/home/sean/Documents/')"><i class="fa fa-file"
+                                                                                   aria-hidden="true"></i> Documents
+            </div>
+            <hr>
+            <div class="shortcut" onclick="readFolder('/home/sean/Downloads/')"><i class="fa fa-download"
+                                                                                   aria-hidden="true"></i> Downloads
+            </div>
+            <hr>
+            <div class="shortcut" onclick="readFolder('/home/sean/Music/')"><i class="fa fa-music"
+                                                                               aria-hidden="true"></i> Music
+            </div>
+            <hr>
+            <div class="shortcut" onclick="readFolder('/home/sean/Pictures/')"><i class="fa fa-picture-o"
+                                                                                  aria-hidden="true"></i> Pictures
+            </div>
+            <hr>
+            <div class="shortcut" onclick="readFolder('/home/sean/Action/')"><i class="fa fa-folder-open"
+                                                                                aria-hidden="true"></i> Action
+            </div>
+            <hr>
+            <div class="shortcut" onclick="readFolder('/home/sean/Dropbox/')"><i class="fa fa-dropbox"
+                                                                                 aria-hidden="true"></i> Dropbox
+            </div>
+            <hr>
+            <br>
+            <br>
+            DISKS
+            <br>
+            <hr>
+            <div class="shortcut" onclick="readFolder('/media/sean/Njenga/')"><i class="fa fa- fa-hdd-o"
+                                                                                 aria-hidden="true"></i> Njenga
+            </div>
+            <hr>
+            <div class="shortcut" onclick="readFolder('/media/sean/Njoroge/')"><i class="fa fa- fa-hdd-o"
+                                                                                  aria-hidden="true"></i> Njoroge
+            </div>
+            <hr>
+            <div class="shortcut" onclick="readFolder('/media/sean/Sean/')"><i class="fa fa- fa-hdd-o"
+                                                                               aria-hidden="true"></i> Sean
+            </div>
+        </div>
+        <div class="col-sm-offset-1 col-sm-5">
+            <div id="listed-files"></div>
+        </div>
+    </div>
+</div>
+<hr>
+
+<script>require('./../renderer/renderer');</script>
+</body>
+</html>

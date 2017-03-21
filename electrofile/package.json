@@ -2,10 +2,7 @@
   "name": "electrofile",
   "version": "1.0.0",
   "description": "A file manager made with electron",
-  "main": "main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "index.js",
   "author": "Sean",
   "license": "ISC"
 }
